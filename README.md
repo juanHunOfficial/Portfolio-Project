@@ -1,0 +1,1 @@
+Initial commit README. Depending on what I manage to find in my research this maybe a big part of this repo.
