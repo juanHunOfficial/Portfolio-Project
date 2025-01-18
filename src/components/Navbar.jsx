@@ -5,7 +5,7 @@ import linkedinLogo from '../assets/linkedin.svg'
 export default function Navbar() {
   return(
     <>
-      <div className="navbar bg-primary">
+      <div className="navbar fixed text-primary-content z-50 bg-primary">
         {/* Github link and icon */}
         <div className="navbar-start">
             <a 
@@ -14,16 +14,15 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              My Github 
               <img src={githubLogo} className="h-10 w-10" alt="Github Logo"/>
             </a>
         </div>
         {/* Middle section of the navbar */}
         <div className="navbar-center hidden gap-2 lg:flex">
-          <button className="btn btn-ghost hover:bg-transparent text-lg"><Link>Full-Stack Projects</Link></button>
-          <button className="btn btn-ghost hover:bg-transparent text-lg"><Link>About</Link></button>
-          <button className="btn btn-ghost hover:bg-transparent text-lg"><Link>Resume</Link></button>
-          <button className="btn btn-ghost hover:bg-transparent text-lg"><Link>Contact Me</Link></button>
+          <Link className="btn btn-ghost hover:bg-transparent text-lg" to="/">Projects</Link>
+          <Link className="btn btn-ghost hover:bg-transparent text-lg" to="/about/" >About</Link>
+          <Link className="btn btn-ghost hover:bg-transparent text-lg">Resume</Link>
+          <Link className="btn btn-ghost hover:bg-transparent text-lg">Contact</Link>
         </div>
         <div className="navbar-end mr-4">
           <a 

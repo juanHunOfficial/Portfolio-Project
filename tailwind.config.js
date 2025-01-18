@@ -8,7 +8,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('daisyui'), // Include DaisyUI here
+    require('daisyui'), 
   ],
   daisyui: {
     themes: [
@@ -19,8 +19,12 @@ module.exports = {
       "emerald", 
       "lofi", 
       "night", 
-      "forrest",
-      "dracula"
+      "forest",
+      "dracula",
+      "business",
+      "corporate",
+      "synthwave",
+      "luxury"
     ],
   },
 }
