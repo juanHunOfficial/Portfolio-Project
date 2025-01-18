@@ -11,6 +11,16 @@ module.exports = {
     require('daisyui'), // Include DaisyUI here
   ],
   daisyui: {
-    themes: ["light", "dark", "cupcake"],
+    themes: [
+      "light", 
+      "dark", 
+      "cupcake", 
+      "winter", 
+      "emerald", 
+      "lofi", 
+      "night", 
+      "forrest",
+      "dracula"
+    ],
   },
 }
