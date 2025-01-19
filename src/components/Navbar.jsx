@@ -5,7 +5,7 @@ import linkedinLogo from '../assets/linkedin.svg'
 export default function Navbar() {
   return(
     <>
-      <div className="navbar fixed text-primary-content z-50 bg-primary">
+      <div className="navbar fixed text-primary-content top-0 z-50 bg-primary">
         {/* Github link and icon */}
         <div className="navbar-start">
             <a 

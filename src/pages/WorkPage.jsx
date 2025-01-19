@@ -1,11 +1,12 @@
 import VideoBackground from '../components/VideoBackground'
 
 export default function WorkPage() {
+  
   return(
     <div id="work-page-container" className="flex flex-col items-center justify-center">
       <VideoBackground />
       {/* Introduction card */}
-      <div className="card card-side relative z-10 glass bg-primary text-primary-content mt-48 w-3/4">
+      <div id="#scroll-div" className="card card-side relative z-10 glass bg-primary text-primary-content mt-48 w-3/4">
         <figure className='h-[320px] w-[300px]'>
           <svg 
             viewBox="0 0 24 24">
@@ -38,10 +39,10 @@ export default function WorkPage() {
         </div>
       </div>
       {/* Title */}
-      <h2 className='text-6xl mt-64 ' >Full-Stack Projects</h2>
+      <h2 id="#scroll-div"  className='text-6xl mt-64' >Full-Stack Projects</h2>
       {/* Projects showcase */}
         {/* Project 1 */}
-      <div className="card mt-32 lg:card-side bg-primary">
+      <div id="#scroll-div" className="card mt-32 lg:card-side bg-primary">
         <figure>
           <img
             src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
@@ -57,7 +58,7 @@ export default function WorkPage() {
       </div>
       <div className="divider mt-32 divider-primary"></div>
         {/* Project 2 */}
-      <div className="card lg:card-side mt-32 bg-primary">
+      <div id="#scroll-div" className="card lg:card-side mt-32 bg-primary">
         <figure>
           <img
             src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
@@ -73,7 +74,7 @@ export default function WorkPage() {
       </div>
       <div className="divider mt-32 divider-primary"></div>
         {/* Project 3 */}
-      <div className="card lg:card-side my-32 bg-primary">
+      <div id="#scroll-div" className="card lg:card-side my-32 bg-primary">
         <figure>
           <img
             src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
