@@ -19,7 +19,7 @@ export default function AboutPage(){
       </div>
       {/* Tech stack experience section */}
       <div className='mt-32 flex flex-col justify-center items-center'>
-        <h1 className='text-6xl' >The current tools in my tool-belt</h1>
+        <h1 className='text-6xl' >My Skills</h1>
         {/* Tech stack container */}
         <div>
           <h1 className='text-4xl my-32'>Front-End</h1>
