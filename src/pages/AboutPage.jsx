@@ -50,13 +50,13 @@ export default function AboutPage(){
   return(
     <>
       {/* Title section */}
-      <div className='py-32 flex flex-col justify-center items-center bg-primary'>
-        <h1 className='text-6xl'>About</h1>
-        <Lottie className='mt-12 w-full h-[650px] bg-primary ' animationData={animationData} />
+      <div className='pt-16 flex flex-col justify-center items-center'>
+        <Lottie className='mt-12 w-full h-[650px]' animationData={animationData} />
+        <h1 className='text-6xl mb-24 '>About Me</h1>
       </div>
       {/* Tech stack experience section */}
       <div className='my-32 flex flex-col justify-center items-center'>
-        <h1 className='text-6xl' >My Skills</h1>
+        <h1 className='text-6xl divider divider-secondary' >My Skills</h1>
         {/* Tech stack container */}
         <div className='flex justify-center mt-32 w-full'>
           <div className='flex flex-wrap w-3/4 gap-16 justify-center'>
@@ -73,7 +73,7 @@ export default function AboutPage(){
       {/* I am statements */}
       <div className='flex flex-col items-center text-primary-content justify-center py-32'>
       <Lottie className='absolute' animationData={bubbleAnimationData} />
-        <h1 className='text-6xl z-10'>I AM</h1>
+        <h1 className='text-6xl divider divider-secondary mb-32 z-10'>I AM</h1>
         <div className='card bg-primary glass p-10 w-[850px] mt-16'>
           <h2 className='text-lg text-primary-content card-title self-center'>Attentive to detail</h2>
           <br/>
