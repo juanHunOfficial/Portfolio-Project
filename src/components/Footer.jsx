@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function Footer() {
   return(
     <>
-      <footer className="footer bg-primary mt-32 text-base-content p-10">
+      <footer className="footer bg-primary border-t-2 border-secondary text-base-content p-10">
         <nav className="text-primary-content">
           <h6 className="footer-title">Skills</h6>
           <Link className="link link-hover">Resume</Link>
