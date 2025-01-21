@@ -22,7 +22,7 @@ export default function Navbar() {
           <Link className="btn btn-ghost hover:bg-transparent text-lg" to="/">Projects</Link>
           <Link className="btn btn-ghost hover:bg-transparent text-lg" to="/about/" >About</Link>
           <Link className="btn btn-ghost hover:bg-transparent text-lg">Resume</Link>
-          <Link className="btn btn-ghost hover:bg-transparent text-lg">Contact</Link>
+          <Link className="btn btn-ghost hover:bg-transparent text-lg" to="/contact/">Contact</Link>
         </div>
         <div className="navbar-end mr-4">
           <a 
