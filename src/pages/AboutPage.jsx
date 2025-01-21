@@ -14,6 +14,7 @@ import restapiLogo from '../assets/tech-stack-logos/rest-api-logo.svg'
 import gitLogo from '../assets/tech-stack-logos/git-logo.svg'
 import githubLogo from '../assets/github-logo.png'
 import postmanLogo from '../assets/tech-stack-logos/postman-logo.svg'
+import Reveal from '../components/Reveal'
 
 export default function AboutPage(){
   const listOfLogos = [
@@ -50,19 +51,24 @@ export default function AboutPage(){
   return(
     <>
       {/* Title section */}
-      <div className='pt-16 flex flex-col justify-center items-center'>
+      <Reveal>
+      <div className='pt-16 flex flex-col min-h-screen justify-center items-center'>
         <Lottie className='mt-12 w-full h-[650px]' animationData={animationData} />
         <h1 className='text-6xl mb-24 '>About Me</h1>
       </div>
+      </Reveal>
       {/* Tech stack experience section */}
+      <Reveal>
+        <h1 className='text-6xl mt-32 divider divider-secondary' >My Skills</h1>
+      </Reveal>
+      <Reveal>
       <div className='my-32 flex flex-col justify-center items-center'>
-        <h1 className='text-6xl divider divider-secondary' >My Skills</h1>
         {/* Tech stack container */}
         <div className='flex justify-center mt-32 w-full'>
           <div className='flex flex-wrap w-3/4 gap-16 justify-center'>
             {listOfLogos.map((logo, index) => (
-
-            <div key={index} className='flex flex-col items-center justify-center'>
+              
+              <div key={index} className='flex flex-col items-center justify-center'>
               <img className='w-48 h-48' src={logo}/>
               <p className='text-2xl mt-4' >{listOfLogoTitles[index]}</p>
             </div>
@@ -70,11 +76,15 @@ export default function AboutPage(){
           </div>
         </div>
       </div>
+      </Reveal>
       {/* I am statements */}
+      <Reveal>
+      <h1 className='text-6xl divider divider-secondary my-32 z-10'>I AM</h1>
+      </Reveal>
+      <Reveal>
       <div className='flex flex-col items-center text-primary-content justify-center py-32'>
       <Lottie className='absolute' animationData={bubbleAnimationData} />
-        <h1 className='text-6xl divider divider-secondary mb-32 z-10'>I AM</h1>
-        <div className='card bg-primary glass p-10 w-[850px] mt-16'>
+        <div className='card bg-primary glass p-4 w-[850px] mt-16'>
           <h2 className='text-lg text-primary-content card-title self-center'>Attentive to detail</h2>
           <br/>
           <p>
@@ -87,7 +97,7 @@ export default function AboutPage(){
             application.  
           </p>
         </div>
-        <div className='card bg-primary glass p-10 w-[850px] mt-10'>
+        <div className='card bg-primary glass p-4 w-[850px] mt-10'>
           <h2 className='text-lg text-primary-content card-title self-center'>A team player</h2>
           <br/>
           <p>
@@ -100,7 +110,7 @@ export default function AboutPage(){
             effectively get out tasks done and hit our goals.
           </p>
         </div>
-        <div className='card bg-primary glass p-10 w-[850px] mt-10'>
+        <div className='card bg-primary glass p-4 w-[850px] mt-10'>
           <h2 className='text-lg text-primary-content card-title self-center'>A cross-functional leader</h2>
           <br/>
           <p>
@@ -114,6 +124,7 @@ export default function AboutPage(){
           </p>
         </div>
       </div>
+      </Reveal>
     </>
   )
 }

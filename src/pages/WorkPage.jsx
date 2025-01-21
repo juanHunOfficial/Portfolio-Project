@@ -1,12 +1,14 @@
 import Lottie from 'lottie-react'
 import welcomeGuyAnimationData from '../assets/animations/welcome-guy-animation.json'
 import speechBubble from '../assets/speech-bubble.svg'
+import Reveal from '../components/Reveal'
 
 export default function WorkPage() {
   
   return(
     <div id="work-page-container" className="flex flex-col items-center justify-center">
       {/* Introduction card */}
+      <Reveal>
       <div className="card card-side relative z-10 glass bg-primary text-primary-content mt-48 w-[1000px]">
         <Lottie animationData={welcomeGuyAnimationData} />
         <div className='absolute w-32 top-10 left-48'>
@@ -29,10 +31,14 @@ export default function WorkPage() {
           </div>
         </div>
       </div>
+      </Reveal>
       {/* Title */}
+      <Reveal>
       <h2  className='text-6xl divider divider-secondary mt-64' >Full-Stack Projects</h2>
+      </Reveal>
       {/* Projects showcase */}
         {/* Project 1 */}
+      <Reveal>
       <div className="card mt-32 lg:card-side bg-primary">
         <figure>
           <img
@@ -47,7 +53,9 @@ export default function WorkPage() {
           </div>
         </div>
       </div>
+      </Reveal>
         {/* Project 2 */}
+      <Reveal>
       <div className="card lg:card-side mt-32 bg-primary">
         <figure>
           <img
@@ -62,7 +70,9 @@ export default function WorkPage() {
           </div>
         </div>
       </div>
+      </Reveal>
         {/* Project 3 */}
+      <Reveal>
       <div className="card lg:card-side my-32 bg-primary">
         <figure>
           <img
@@ -77,6 +87,7 @@ export default function WorkPage() {
           </div>
         </div>
       </div>
+      </Reveal>
     </div>
   )
 }
