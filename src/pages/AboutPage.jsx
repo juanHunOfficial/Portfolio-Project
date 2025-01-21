@@ -52,9 +52,9 @@ export default function AboutPage(){
     <>
       {/* Title section */}
       <Reveal>
-      <div className='pt-16 flex flex-col min-h-screen justify-center items-center'>
-        <Lottie className='mt-12 w-full h-[650px]' animationData={animationData} />
-        <h1 className='text-6xl mb-24 '>About Me</h1>
+      <div className='flex flex-col min-h-screen  items-center'>
+        <Lottie className='w-full h-[650px] mb-24' animationData={animationData} />
+        <h1 className='text-6xl '>About Me</h1>
       </div>
       </Reveal>
       {/* Tech stack experience section */}
@@ -79,7 +79,7 @@ export default function AboutPage(){
       </Reveal>
       {/* I am statements */}
       <Reveal>
-      <h1 className='text-6xl divider divider-secondary my-32 z-10'>I AM</h1>
+      <h1 className='text-6xl divider divider-secondary mt-32 z-10'>I AM</h1>
       </Reveal>
       <Reveal>
       <div className='flex flex-col items-center text-primary-content justify-center py-32'>

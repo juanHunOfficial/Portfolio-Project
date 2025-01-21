@@ -6,7 +6,7 @@ import Reveal from '../components/Reveal'
 export default function WorkPage() {
   
   return(
-    <div id="work-page-container" className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center">
       {/* Introduction card */}
       <Reveal>
       <div className="card card-side relative z-10 glass bg-primary text-primary-content mt-48 w-[1000px]">

@@ -7,18 +7,29 @@ export default function Footer() {
         <nav className="text-primary-content">
           <h6 className="footer-title">Skills</h6>
           <Link className="link link-hover">Resume</Link>
-          <Link className="link link-hover">Tech Stack</Link>
+          <Link className="link link-hover" to="/about/">Tech Stack</Link>
         </nav>
         <nav className="text-primary-content">
           <h6 className="footer-title">Contact</h6>
-          <Link className="link link-hover">LinkedIn</Link>
-          <Link className="link link-hover">Book Link Call</Link>
-          <Link className="link link-hover">Leave Feedback</Link>
+          <a 
+            className="link link-hover"
+            href="https://www.linkedin.com/in/juan-hun-608236209/"
+            target="_blank"
+            rel="noopener noreferrer" 
+          >LinkedIn</a>
+          <Link className="link link-hover" to="/contact/">Book a Call</Link>
         </nav>
         <nav className="text-primary-content">
           <h6 className="footer-title">Projects</h6>
-          <Link className="link link-hover">Github</Link>
-          <Link className="link link-hover">Live Projects</Link>
+          <a 
+            className="link link-hover"
+            href='https://github.com/juanHunOfficial?tab=repositories'
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+          <Link className="link link-hover" to="/">Live Projects</Link>
         </nav>
       </footer>
     </>
