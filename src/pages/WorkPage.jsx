@@ -2,6 +2,7 @@ import Lottie from 'lottie-react'
 import welcomeGuyAnimationData from '../assets/animations/welcome-guy-animation.json'
 import speechBubble from '../assets/speech-bubble.svg'
 import Reveal from '../components/Reveal'
+import { Link } from 'react-router-dom'
 
 export default function WorkPage() {
   
@@ -27,7 +28,7 @@ export default function WorkPage() {
             <strong>Secret Clearance </strong>
           </p>
           <div className="card-actions justify-end">
-            <button className="btn btn-secondary text-secondary-content">Let's Work Together!</button>
+            <button className="btn btn-secondary text-secondary-content"><Link to="/Portfolio-Project/contact" >Let's Work Together!</Link></button>
           </div>
         </div>
       </div>
