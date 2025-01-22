@@ -28,7 +28,7 @@ export default function WorkPage() {
             <strong>Secret Clearance </strong>
           </p>
           <div className="card-actions justify-end">
-            <button className="btn btn-secondary text-secondary-content"><Link to="/Portfolio-Project/contact" >Let's Work Together!</Link></button>
+            <Link className="btn btn-secondary text-secondary-content"to="/Portfolio-Project/contact" >Let's Work Together!</Link>
           </div>
         </div>
       </div>
