@@ -1,5 +1,6 @@
 {
   "name": "juan-portfolio",
+  "homepage": "https://juanHunOfficial.github.io/Portfolio-Project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -36,6 +37,5 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.17",
     "vite": "^5.4.9"
-  },
-  "homepage": "https://juanHunOfficial.github.io/Portfolio-Project"
+  }
 }
