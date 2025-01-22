@@ -35,7 +35,7 @@ export default function WorkPage() {
       </Reveal>
       {/* Title */}
       <Reveal>
-      <h2  className='text-6xl divider divider-secondary mt-64' >Full-Stack Projects</h2>
+        <h1 className='text-6xl mt-32 divider divider-secondary'>Full-Stack Projects</h1>
       </Reveal>
       {/* Projects showcase */}
         {/* Project 1 */}
@@ -44,13 +44,21 @@ export default function WorkPage() {
         <figure>
           <img
             src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-            alt="Album" />
+            alt="Coming Soon" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">New album is released!</h2>
-          <p>Click the button to listen on Spotiwhy app.</p>
+          <h2 className="card-title">Coming Soon, visit my github to see my latest projects</h2>
+          <p>Click the button below to be taken to my latest project's repository.</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Listen</button>
+            <button className="btn btn-secondary">
+              <a
+                href='https://github.com/juanHunOfficial/code-platoon-folder/tree/main/fitness_proj'
+                target="_blank"
+                rel="noopener noreferrer"  
+              >
+                Github
+              </a>
+            </button>
           </div>
         </div>
       </div>
@@ -61,13 +69,21 @@ export default function WorkPage() {
         <figure>
           <img
             src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-            alt="Album" />
+            alt="Coming Soon" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">New album is released!</h2>
-          <p>Click the button to listen on Spotiwhy app.</p>
+          <h2 className="card-title">Coming Soon, visit my github to see my latest projects</h2>
+          <p>Click the button to Github on Spotiwhy app.</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Listen</button>
+            <button className="btn btn-secondary">
+              <a
+                href='https://github.com/juanHunOfficial/code-platoon-folder/tree/main/fitness_proj'
+                target="_blank"
+                rel="noopener noreferrer"  
+              >
+                Github
+              </a>
+            </button>
           </div>
         </div>
       </div>
@@ -78,13 +94,21 @@ export default function WorkPage() {
         <figure>
           <img
             src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-            alt="Album" />
+            alt="Coming Soon" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">New album is released!</h2>
-          <p>Click the button to listen on Spotiwhy app.</p>
+          <h2 className="card-title">Coming Soon, visit my github to see my latest projects</h2>
+          <p>Click the button to Github on Spotiwhy app.</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Listen</button>
+            <button className="btn btn-secondary">
+              <a
+                href='https://github.com/juanHunOfficial/code-platoon-folder/tree/main/fitness_proj'
+                target="_blank"
+                rel="noopener noreferrer"  
+              >
+                Github
+              </a>
+            </button>
           </div>
         </div>
       </div>
