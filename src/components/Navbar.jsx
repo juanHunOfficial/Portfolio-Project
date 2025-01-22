@@ -1,11 +1,13 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import githubLogo from '../assets/github-logo.png';
 import linkedinLogo from '../assets/linkedin.svg';
 import resume from "../assets/resume-docs/juan-resume.pdf"
 
 const Navbar = () => {
+  const location = useLocation();
+
   const isActive = (path) => {
-    return window.location.pathname === `/Portfolio-Project${path}` ? 'bg-neutral text-neutral-content hover:bg-neutral transitions duration-700 ' : '';
+    return location.pathname === `/Portfolio-Project${path}` ? 'bg-neutral text-neutral-content hover:bg-neutral transitions duration-700 ' : '';
   };
 
   return (
