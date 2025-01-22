@@ -15,7 +15,7 @@ export default function Reveal({children, width = "fit-content"}){
   }, [isInView])
 
   return (
-    <div ref={divRef} className="relative w-full">
+    <div ref={divRef} className="relative">
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
