@@ -1,46 +1,44 @@
-import { NavLink, useLocation } from "react-router-dom"
-import githubLogo from '../assets/github-logo.png'
-import linkedinLogo from '../assets/linkedin.svg'
+import { NavLink } from 'react-router-dom';
+import githubLogo from '../assets/github-logo.png';
+import linkedinLogo from '../assets/linkedin.svg';
 import resume from "../assets/resume-docs/juan-resume.pdf"
 
-export default function Navbar() {
-  const location = useLocation();
+const Navbar = () => {
+  const isActive = (path) => {
+    return window.location.pathname === `/Portfolio-Project${path}` ? 'bg-neutral text-neutral-content hover:bg-neutral transitions duration-700 ' : '';
+  };
 
-  // helper function that checks if the what the current locations 
-  // path is and returns the corresponding value
-  const isActive = (path) => location.pathname === path ? "bg-neutral text-neutral-content hover:bg-neutral transitions duration-700 " : "";
-  
-  return(
+  return (
     <>
       <div className="navbar sticky text-primary-content top-0 z-50 shadow-xl bg-primary">
         {/* Github link and icon */}
         <div className="navbar-start">
-            <a 
-              className="flex flex-row gap-2 items-center btn bg-primary shadow-none text-lg hover:bg-transparent border-none"
-              href='https://github.com/juanHunOfficial?tab=repositories'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={githubLogo} className="h-10 w-10" alt="Github Logo"/>
-            </a>
+          <a
+            className="flex flex-row gap-2 items-center btn bg-primary shadow-none text-lg hover:bg-transparent border-none"
+            href='https://github.com/juanHunOfficial?tab=repositories'
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={githubLogo} className="h-10 w-10" alt="Github Logo"/>
+          </a>
         </div>
         {/* Middle section of the navbar */}
         <div className="navbar-center hidden gap-2 lg:flex">
           <NavLink 
-             className={`btn btn-ghost hover:bg-transparent text-lg ${isActive('/')}`}
-             to="/"
+            className={`btn btn-ghost hover:bg-transparent text-lg ${isActive('/')}`}
+            to="/Portfolio-Project/"
           >
             Projects
-          </NavLink >
+          </NavLink>
           <NavLink 
-            className={`btn btn-ghost hover:bg-transparent text-lg ${isActive('/about/')}`}
-            to="/about/" 
+            className={`btn btn-ghost hover:bg-transparent text-lg ${isActive('/about')}`}
+            to="/Portfolio-Project/about"
           >
             About
           </NavLink>
           <NavLink 
-            className={`btn btn-ghost hover:bg-transparent text-lg ${isActive('/contact/')}`} 
-            to="/contact/"
+            className={`btn btn-ghost hover:bg-transparent text-lg ${isActive('/contact')}`} 
+            to="/Portfolio-Project/contact"
           >
             Contact
           </NavLink>
@@ -52,7 +50,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="h-12 w-12" src={linkedinLogo} />
+            <img className="h-12 w-12" src={linkedinLogo} alt="LinkedIn Logo"/>
           </a>
         </div>
         <button 
@@ -71,5 +69,7 @@ export default function Navbar() {
         </dialog>
       </div>
     </>
-  )
-}
+  );
+};
+
+export default Navbar;

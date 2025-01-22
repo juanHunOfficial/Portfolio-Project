@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export default function Footer() {
-  return(
+  return (
     <>
       <footer className="footer bg-primary border-t-2 border-secondary text-base-content p-10">
         <nav className="text-primary-content">
           <h6 className="footer-title">Skills</h6>
-          <Link className="link link-hover" to="/about/">Tech Stack</Link>
+          <Link className="link link-hover" to="/Portfolio-Project/about">Tech Stack</Link>
         </nav>
         <nav className="text-primary-content">
           <h6 className="footer-title">Contact</h6>
@@ -14,9 +14,11 @@ export default function Footer() {
             className="link link-hover"
             href="https://www.linkedin.com/in/juan-hun-608236209/"
             target="_blank"
-            rel="noopener noreferrer" 
-          >LinkedIn</a>
-          <Link className="link link-hover" to="/contact/">Book a Call</Link>
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <Link className="link link-hover" to="/Portfolio-Project/contact">Book a Call</Link>
         </nav>
         <nav className="text-primary-content">
           <h6 className="footer-title">Projects</h6>
@@ -28,9 +30,9 @@ export default function Footer() {
           >
             Github
           </a>
-          <Link className="link link-hover" to="/">Live Projects</Link>
+          <Link className="link link-hover" to="/Portfolio-Project/">Live Projects</Link>
         </nav>
       </footer>
     </>
-  )
+  );
 }
