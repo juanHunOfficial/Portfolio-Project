@@ -44,22 +44,45 @@ export default function WorkPage() {
         {/* Project 1 */}
         <Reveal>
         <div className="card self-center w-[63rem] h-[25rem] mt-[10rem] lg:card-side bg-primary">
-          <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-              alt="Coming Soon" />
+        <figure className="w-1/3">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/woOCsWDlof0"
+              title="YouTube video player"
+              style={{ border: 0 }}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </figure>
-          <div className="card-body">
-            <h2 className="card-title">Coming Soon, visit my github to see my latest projects</h2>
-            <p>Click the button below to be taken to my latest project's repository.</p>
+          <div className="card-body w-2/3">
+            <h2 className="card-title">Redzone Getaway (Group Project)</h2>
+            <ul>
+              <li>Users can create, update, and delete events, flights, and hotel bookings.</li>
+              <li>Users can look up flights and hotels by location code.</li>
+              <li>Users can add items to their cart so they can continue browsing and proceed to checkout when they are ready.</li>
+              <li>Built on React.js and Django , utilizing the Ball Don't Lie API for NFL player stats, Sports Data API for NFL game 
+                scores, Flight API for real-time flight data, and the Amadeus API for real-time hotel data.
+              </li>
+            </ul>
+            <br/>
             <div className="card-actions justify-end">
               <button className="btn btn-secondary">
                 <a
-                  href='https://github.com/juanHunOfficial/code-platoon-folder/tree/main/fitness_proj'
+                  href='https://github.com/juanHunOfficial/redzone-getaway-clone'
                   target="_blank"
                   rel="noopener noreferrer"  
                   >
                   Github
+                </a>
+              </button>
+              <button className="btn btn-secondary">
+                <a
+                  href='https://youtu.be/woOCsWDlof0'
+                  target="_blank"
+                  rel="noopener noreferrer"  
+                  >
+                  YouTube
                 </a>
               </button>
             </div>
@@ -69,7 +92,7 @@ export default function WorkPage() {
           {/* Project 2 */}
         <Reveal>
         <div className="card lg:card-side self-center w-[63rem] h-[25rem] mt-[10rem] bg-primary">
-          <figure className="w-full lg:w-2/3">
+          <figure className="w-1/3">
             <iframe
               width="100%"
               height="315"
@@ -80,8 +103,8 @@ export default function WorkPage() {
               allowFullScreen
             ></iframe>
           </figure>
-          <div className="card-body">
-            <h2 className="card-title">Progressive Overload Tracker</h2>
+          <div className="card-body w-2/3">
+            <h2 className="card-title">Progressive Overload Tracker (First Solo Project)</h2>
             <title>This is a web application for bodybuilders that want to track their progress effectively</title>
             <ul>
               <li>Users can create, update, and delete trackers, workouts, exercises, and data points showcasing their progress.</li>
@@ -89,6 +112,7 @@ export default function WorkPage() {
               <li>Users can look up meals to get insight into the meal’s macro-nutrients to help them meet their nutrition goals.</li>
               <li>Built on React.js and Django , utilizes Ninja-API’s Nutrition API and Exercise API for nutrition and exercise data.</li>
             </ul>
+            <br/>
             <div className="card-actions justify-end ">
               <button className="btn btn-secondary">
                 <a
@@ -115,18 +139,24 @@ export default function WorkPage() {
           {/* Project 3 */}
         <Reveal>
         <div className="card lg:card-side self-center w-[63rem] h-[25rem] my-[10rem] bg-primary">
-          <figure>
+          <figure >
             <img
               src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
               alt="Coming Soon" />
           </figure>
-          <div className="card-body">
-            <h2 className="card-title">Coming Soon, visit my github to see my latest projects</h2>
-            <p>Click the button to Github on Spotiwhy app.</p>
+          <div className="card-body w-2/3">
+            <h2 className="card-title">Coming Soon, the button below takes you to the repository of my latest project</h2>
+            <p>
+              Currently I am learning how to use Node.js, Express, and MongoDB by making a finance app. The goal of the app 
+              is to help my wife and I keep better track of our money with an app that can link to our bank account and pull 
+              all of our recent transactions. This will allow us to categorize our spending in the appropriate categories and 
+              keep track of the our spending habits. The categories and their subsequent data will be saved to the account and 
+              displayed in a graph utilizing charts.js to make an easy to understand visual representation of our spending habits.
+            </p>
             <div className="card-actions justify-end">
               <button className="btn btn-secondary">
                 <a
-                  href='https://github.com/juanHunOfficial/code-platoon-folder/tree/main/fitness_proj'
+                  href='https://github.com/juanHunOfficial/finance-app'
                   target="_blank"
                   rel="noopener noreferrer"  
                   >
