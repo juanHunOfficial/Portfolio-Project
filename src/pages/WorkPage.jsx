@@ -1,9 +1,6 @@
-import Lottie from 'lottie-react'
-import welcomeGuyAnimationData from '../assets/animations/welcome-guy-animation.json'
-import speechBubble from '../assets/speech-bubble.svg'
 import Reveal from '../components/Reveal'
-import { Link } from 'react-router-dom'
 import WorkInfoCard from '../components/WorkInfoCard'
+import IntroCard from '../components/IntroCard'
 
 export default function WorkPage() {
   
@@ -52,66 +49,41 @@ export default function WorkPage() {
 
   return(
     <>
-      <div className='flex flex-col items-center justify-center'>
       {/* Introduction card */}
-        <Reveal>
-        <div className="card card-side relative z-10 glass bg-primary text-primary-content mt-48 w-[63rem]">
-          <Lottie animationData={welcomeGuyAnimationData} />
-          <div className='absolute w-32 top-[2.5rem] left-[12rem]'>
-            <img  src={speechBubble} />
-          </div>
-            <p className='absolute w-20 top-[5rem] left-[13.5rem] text-center card-title'>Hi, I'm Juan</p>
-          <div className="card-body">
-            <h2 className="card-title">I am a Military Veteran turned Full-Stack Software Engineer</h2>
-            <p className='w-[35rem] '>
-              with over 5 years of operations, logistics and project management experience in 
-              the military across maintenance and operations. Tested expertise in quality assurance, 
-              technical leadership and customer relations. Seeking a developer position in a 
-              challenging field that has opportunities for growth and development.
-              <br/>
-              <br/>
-              <strong>Secret Clearance </strong>
-            </p>
-            <div className="card-actions justify-end">
-              <Link className="btn btn-secondary text-secondary-content" to="/Portfolio-Project/contact" >Let's Work Together!</Link>
-            </div>
-          </div>
-        </div>
-        </Reveal>
-      </div>
+      <IntroCard />
       {/* Title */}
       <Reveal>
         <h1 className='text-6xl mt-[10rem] divider divider-secondary'>Full-Stack Projects</h1>
       </Reveal>
       {/* Projects showcase */}
-        <div className='flex flex-col items-center my-[10rem] justify-center'>
+      <div className='flex flex-col items-center my-[10rem] justify-center'>
         {/* Project 1 */}
-          <WorkInfoCard 
-            title={project1Info.title} 
-            description={project1Info.description}
-            bulletPoints={project1Info.bulletPoints} 
-            videoSrcLink={project1Info.videoSrcLink} 
-            githubRepoLink={project1Info.githubRepoLink} 
-            youtubeLink={project1Info.youtubeLink} 
-          />
-          {/* Project 2 */}
-          <WorkInfoCard 
-            title={project2Info.title} 
-            description={project2Info.description}
-            bulletPoints={project2Info.bulletPoints} 
-            videoSrcLink={project2Info.videoSrcLink} 
-            githubRepoLink={project2Info.githubRepoLink} 
-            youtubeLink={project2Info.youtubeLink} 
-          />
-          {/* Project 3 */}
-          <WorkInfoCard 
-            title={project3Info.title} 
-            description={project3Info.description}
-            bulletPoints={project3Info.bulletPoints} 
-            videoSrcLink={project3Info.videoSrcLink} 
-            githubRepoLink={project3Info.githubRepoLink} 
-            youtubeLink={project3Info.youtubeLink} 
-          />
+        <WorkInfoCard 
+          title={project1Info.title} 
+          description={project1Info.description}
+          bulletPoints={project1Info.bulletPoints} 
+          videoSrcLink={project1Info.videoSrcLink} 
+          githubRepoLink={project1Info.githubRepoLink} 
+          youtubeLink={project1Info.youtubeLink} 
+        />
+        {/* Project 2 */}
+        <WorkInfoCard 
+          title={project2Info.title} 
+          description={project2Info.description}
+          bulletPoints={project2Info.bulletPoints} 
+          videoSrcLink={project2Info.videoSrcLink} 
+          githubRepoLink={project2Info.githubRepoLink} 
+          youtubeLink={project2Info.youtubeLink} 
+        />
+        {/* Project 3 */}
+        <WorkInfoCard 
+          title={project3Info.title} 
+          description={project3Info.description}
+          bulletPoints={project3Info.bulletPoints} 
+          videoSrcLink={project3Info.videoSrcLink} 
+          githubRepoLink={project3Info.githubRepoLink} 
+          youtubeLink={project3Info.youtubeLink} 
+        />
       </div>
     </>
   )
