@@ -1,7 +1,9 @@
 import Reveal from "./Reveal";
+import PropTypes from 'prop-types';
 
 
 export default function WorkInfoCard({title, description, bulletPoints, videoSrcLink, githubRepoLink, youtubeLink}){
+  
   return (
     <div>
       <Reveal>
@@ -55,3 +57,13 @@ export default function WorkInfoCard({title, description, bulletPoints, videoSrc
     </div>
   )
 }
+
+// PropTypes declaration
+WorkInfoCard.propTypes = {
+  title : PropTypes.string.isRequired,
+  description : PropTypes.string.isRequired,
+  bulletPoints : PropTypes.array.isRequired,
+  videoSrcLink : PropTypes.string.isRequired,
+  githubRepoLink : PropTypes.string.isRequired,
+  youtubeLink : PropTypes.string.isRequired,
+ }
