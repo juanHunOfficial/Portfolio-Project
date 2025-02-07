@@ -51,7 +51,7 @@ export default function EmailForm(){
             <input type="text" className="grow" name='from_email' placeholder="Your Email" />
           </label>
           <textarea className="textarea textarea-bordered w-[1058px] h-1/4" name='message' placeholder="Your Message"></textarea>
-        <button className="btn btn-primary w-44" >Submit</button>
+        <button className="btn btn-secondary w-44" >Submit</button>
         </div>
       </form>
     </Reveal>
