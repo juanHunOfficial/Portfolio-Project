@@ -22,8 +22,8 @@ export default function IntroCard() {
               the military across maintenance and operations. Tested expertise in quality assurance, 
               technical leadership and customer relations. Seeking a developer position in a 
               challenging field that has opportunities for growth and development.
-              <strong>Secret Clearance </strong>
             </p>
+            <p className="font-bold">Secret Clearance </p>
             <div className="card-actions justify-end">
               <Link className="btn btn-secondary text-secondary-content" to="/Portfolio-Project/contact" >Let&apos;s Work Together!</Link>
             </div>
