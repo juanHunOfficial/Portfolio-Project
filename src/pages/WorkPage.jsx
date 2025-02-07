@@ -51,10 +51,12 @@ export default function WorkPage() {
     <>
       {/* Introduction card */}
       <IntroCard />
+
       {/* Title */}
       <Reveal>
         <h1 className='text-6xl mt-[10rem] divider divider-secondary'>Full-Stack Projects</h1>
       </Reveal>
+      
       {/* Projects showcase */}
       <div className='flex flex-col items-center my-[10rem] justify-center'>
         {/* Project 1 */}
