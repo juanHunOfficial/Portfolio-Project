@@ -6,9 +6,10 @@ import TechStackCard from '../components/TechStackCard'
 import IAmCard from '../components/IAmCard'
 
 export default function AboutPage(){
-
-  const IAmStatements = {
-    statementOne : {
+  // This code is written in a JSON format to mimic the data one would receive from the backend.
+  const IAmStatements = [
+    {
+      id: 1,
       title : 'Attentive to detail',
       description : 
         `I spent 4 years working as a helicopter mechanic as the 
@@ -19,7 +20,8 @@ export default function AboutPage(){
         and preventing future bugs from making it into the live 
         application. `
     },
-    statementTwo : {
+    {
+      id: 2,
       title : 'A team player',
       description : 
         `I am no stranger to working in a tight-knit group, 
@@ -30,7 +32,8 @@ export default function AboutPage(){
         me learn how to effectively work with people to 
         effectively get out tasks done and hit our goals.`
     },
-    statementThree : {
+    {
+      id: 3,
       title : 'A cross-functional leader',
       description : 
         `I have collaborated between 6 leadership teams to
@@ -41,7 +44,7 @@ export default function AboutPage(){
         Making important deadlines without compromising integrity or quality
         is an essential part of my work ethic. `
     },
-  }
+  ]
   
   return(
     <>
@@ -68,18 +71,16 @@ export default function AboutPage(){
       <Reveal>
         <div className='flex flex-col items-center text-primary-content justify-center py-32'>
         <Lottie className='absolute' animationData={bubbleAnimationData} />
-        <IAmCard 
-          title={IAmStatements.statementOne.title} 
-          description={IAmStatements.statementOne.description} 
-        />
-        <IAmCard 
-          title={IAmStatements.statementTwo.title} 
-          description={IAmStatements.statementTwo.description} 
-        />
-        <IAmCard 
-          title={IAmStatements.statementThree.title} 
-          description={IAmStatements.statementThree.description} 
-        />
+        {/* Similar to the WorkPage, the mapping is used to show that this code was written with scalability
+            in mind and the data was written in a JSON format to mimic what the data from the backend would 
+            look like. Previous versions of this same code was written in a static format. */}
+        {IAmStatements ? IAmStatements.map((data) => (
+          <IAmCard 
+            key={data.id}
+            title={data.title}
+            description={data.description}
+          />
+        )) : null}
         </div>
       </Reveal>
     </>
