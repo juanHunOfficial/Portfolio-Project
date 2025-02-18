@@ -15,48 +15,84 @@ import postmanLogo from '../assets/tech-stack-logos/postman-logo.svg'
 
 export default function TechStackCard() {
   
-  const listOfLogos = [
-    htmlLogo, 
-    cssLogo, 
-    jsLogo, 
-    pythonLogo, 
-    reactLogo,
-    tailwindLogo,
-    bootstrapLogo, 
-    djLogo,
-    postgreSQLLogo,
-    restapiLogo,
-    gitLogo,
-    githubLogo,
-    postmanLogo 
-  ]
-
-  const listOfLogoTitles = [
-    'HTML',
-    'CSS',
-    'JAVASCRIPT',
-    'PYTHON',
-    'REACT',
-    'TAILWIND',
-    'BOOTSTRAP',
-    'DJANGO',
-    'POSTGRESQL',
-    'RESTful API',
-    'GIT',
-    'GITHUB',
-    'POSTMAN'
-  ]
-
+  const techStackLogos = [
+    {
+      id: 1,
+      logo: htmlLogo,
+      logoTitle: 'HTML'
+    },
+    {
+      id: 2,
+      logo: cssLogo,
+      logoTitle: 'CSS'
+    },
+    {
+      id: 3,
+      logo: jsLogo,
+      logoTitle: 'JAVASCRIPT'
+    },
+    {
+      id: 4,
+      logo: pythonLogo,
+      logoTitle: 'PYTHON'
+    },
+    {
+      id: 5,
+      logo: reactLogo,
+      logoTitle: 'REACT'
+    },
+    {
+      id: 6,
+      logo: tailwindLogo,
+      logoTitle: 'TAILWIND'
+    },
+    {
+      id: 7,
+      logo: bootstrapLogo,
+      logoTitle: 'BOOTSTRAP'
+    },
+    {
+      id: 8,
+      logo: djLogo,
+      logoTitle: 'DJANGO'
+    },
+    {
+      id: 9,
+      logo: postgreSQLLogo,
+      logoTitle: 'POSTGRESQL'
+    },
+    {
+      id: 10,
+      logo: restapiLogo,
+      logoTitle: 'RESTful API'
+    },
+    {
+      id: 11,
+      logo: gitLogo,
+      logoTitle: 'GIT'
+    },
+    {
+      id: 12,
+      logo: githubLogo,
+      logoTitle: 'GITHUB'
+    },
+    {
+      id: 13,
+      logo: postmanLogo,
+      logoTitle: 'POSTMAN'
+    }
+  ];
+  
   return(
     <Reveal>
       <div className='my-32 flex flex-col justify-center items-center'>
         <div className='flex justify-center mt-32 w-full'>
           <div className='flex flex-wrap w-3/4 gap-16 justify-center'>
             {
-              listOfLogos.map((logo, index) => (
-              <div key={index} className='flex flex-col items-center justify-center'>
-              <img className='w-48 h-48' src={logo}/>
-              <p className='text-2xl mt-4' >{listOfLogoTitles[index]}</p>
+              techStackLogos.map((data) => (
+              <div key={data.id} className='flex flex-col items-center justify-center'>
+              <img className='w-48 h-48' src={data.logo}/>
+              <p className='text-2xl mt-4' >{data.logoTitle}</p>
             </div>
             ))}
           </div>
